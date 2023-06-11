@@ -149,3 +149,56 @@ footer{
     padding:30px;
     text-align: center;
 }
+/*pagina de contato*/
+.tituloContato{
+    text-align: center;
+    padding:15px;
+    color: rgb(0, 0, 0);
+    font-family:'Lucida Sans';
+    font-size: 30px;  
+}
+.contato{
+    display: flex;
+    justify-content: center;
+}
+form{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+    font-size:18px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 500px;
+    
+}
+ div input {
+    border: 3px #028928 solid ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:10px;
+    border-radius: 12px;
+ }
+ div select {
+    border: 3px #028928 solid ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:5px;
+    border-radius: 12px;
+ 
+ }
+ div textarea { 
+    border: 3px #028928 solid ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+ }
+.orcamento{
+    display: inline;
+    
+}
+
+.butom{
+    padding-right: 5px;
+    margin-top: 20px;
+    width:80px;
+    margin-left: 442px;
+
+}

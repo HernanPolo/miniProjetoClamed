@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Contato</title>
+    <title>Farmacia Python Farma</title>
     <link rel="stylesheet" href="style.css"> <!--vinculando com CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +12,8 @@
     <link rel="shortcut icon" href="images/logopythonfarma.ico" type="image/x-icon" /><!--icono favorito-->
 </head>
 <body>
+
 <header>
-<!--topo do header-->
     <h3>NOVAS OFERTAS TODOS OS DIAS</h3>
 <div><!--logo e menu nav-->
     <img src="images/python-farma-min.png" alt="logo da farmacia e nome da farmacia python farma"><!--logo marca-->
@@ -25,15 +25,51 @@
         </ul>
     </nav>
 </div>
-</header>
 <hr>
+</header>
 <main>
-    <section>
-       
+    <div class="backgroundMain"><!--imagen de fundo-->
+    <h1 class="tituloContato">Formulário de contato</h1>
+    <section class="contato">
+        <form> 
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+            <div>
+                <label for="nome">Telefone:</label>
+                <input type="text" name="telefone" placeholder="Digite seu telefone" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div>
+                <label for="assunto">Assunto</label>
+                <select name="assunto">
+                    <option selected disabled>Selecione</option>
+                    <option>Comercial</option>
+                    <option>Dúvidas</option>
+                    <option>Revenda</option>
+                </select>
+            </div>
+            <div>
+                <label for="textArea">Mensagem:</label>
+                <textarea name="textArea" placeholder="Digite a sua mensagem..." id="textArea" cols="30" rows="10"></textarea>
+            </div>
+            <div class="orcamento">
+                <input type="checkbox" name="orcamento">
+                <label for="orcamento">Esta mensagem é sobre um orçamento</label>
+            </div>
+            <div class="butom">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
     </section>
-</main>    
+</main>   
+<hr> 
 <footer>
-
+    <p>projeto 1 do primeiro modulo</p>
 </footer>
 </body>
 </html>
