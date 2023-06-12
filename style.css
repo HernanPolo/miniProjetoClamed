@@ -1,14 +1,17 @@
+/*configuracao inicial*/
 *{
  margin:0;
  padding:0;
- box-sizing: border-box;
+ box-sizing:border-box;
 /* border:solid black;*/
 }
+/*cabecalho*/
 header{
     /*border:solid yellow; */
     display:block;
-    background-color: #8ce9a5a7;
+    /*background-color: #8ce9a5a7;*/
 }
+/*topo*/
 header h3 {
     background-color:#ff00009a;
     padding: 5px;
@@ -17,11 +20,14 @@ header h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;    
 }
+
+/*fundo main*/
 .backgroundMain{
-    background-color: #ff0000;
+    background-color: #8e8e8e;
     background-image: url(images/fundo.jpg);
 
 }
+/*logo e menu*/
 header div{
    
     display:flex;
@@ -30,10 +36,12 @@ header div{
     align-items:end;
     justify-content:flex-start;
 }
+/*logo*/
 header img{
     width: 400px;
     /*border:solid;*/
 }
+/*menu*/
 header ul{
     display: flex;
     width: 800px ;
@@ -41,6 +49,7 @@ header ul{
     /*border:solid;*/
     justify-content: space-evenly;
 }
+/*items do menu*/
 header li{
     /*border: solid;*/
     font-family: 'Secular One', sans-serif;
@@ -52,13 +61,24 @@ header li{
     /*padding-left:120px;*/
     text-align: center;
 }
+/*links do menu*/
 header a{
     text-decoration: none;
 }
+header a:visited{
+    color:#000000
+}
+header a:active{
+ background-color: #8ce9a5a7;
+ border-radius: 12px;
+ padding:3px
+}
+/*linha fim do cabecalho*/
 hr{
     border: solid 0.25px rgb(128, 0, 0);
     width: 100%;
 }
+/*titulo da section*/
 .titulo{
    
     padding: 5px;
@@ -66,38 +86,52 @@ hr{
     font-family:'Lucida Sans';
     font-size: 30px;  
 }
- section {
-    margin-top: 30px;
+/*section*/
+section{
+    /*margin-top: 30px;*/
     /*background: burlywood;*/
-    display: flex;
-    /*border:solid; */
+    /*display: block;*/
+    height:100%;
+    /*border:solid 30px red; */
  }
- #cards{ 
-  width:100%; 
+/*div cards geral*/
+ #cards1{ 
+ /* width:100%; */
   display:flex;
- /* border: solid 3px;*/
-  justify-content: space-evenly;
-   
+  /*border: solid 3px;*/
+  justify-content: space-evenly; 
  }
+ #cards2{ 
+   /* width:100%; */
+    display:flex;
+    /*border: solid 3px;*/
+    justify-content: space-evenly; 
+   }
+ /*div card*/
 .card{ 
     background-color: #8ce9a5a7;
     margin:15px;
-    border: solid 0.25px rgba(128, 128, 128, 0.142);
     border-radius:12px;
-    box-shadow:4px 4px 5px #587658bd;
     width:auto;
-    height: auto;
-    
+    height: auto;  
 }
+.card:hover{
+    border: solid 0.25px rgba(128, 128, 128, 0.142);
+    box-shadow:6px 6px 8px #587658bd;
+    background-color: #66c780d9;
+}
+/*icone coracao*/
 .icone{
     width: 300px;
     padding:3px;
     font-size:30px ;
     text-align: end;
 }
+/*imagen do remedio*/
 .card img {
     width:300px;
 }
+/*nome do medicamento*/
 .card h2{
     font-family: 'Secular One', sans-serif;
     font-weight:bold;
@@ -106,35 +140,41 @@ hr{
     text-align: center;
 
 }
+/*preco antigo*/
 .pAntigo{
     padding:8px;
     padding-left: 40px;
     font-family: comicsans;
     font-size:20px;
 }
+/*preco atual*/
 .oferta{
     padding:5px;
     font-size:40px;
     text-align: center;
-}        
+}    
+/*botom de adicionar*/    
 .buttom{
     display:flex;
-    background-color: #0080006a;
+    background-color: #21a5216a;
     margin:8px;
     width:280px;
     font-family: 'Courier New', Courier, monospace;
    /* padding:8px;*/
     padding-right: 3px;
     border-radius:12px; 
+    border:solid red;
     
 
 }
+/*icone de mais*/
 .mais{
     font-size: 20px;
     padding:6px;
     display: inline;
     text-align: start;
 }
+/*adicionar*/
 .add {
 
     padding:8px;
@@ -145,11 +185,13 @@ hr{
     /*border: solid;*/
     text-align: center;
 }
+/*rodape*/
 footer{
     padding:30px;
     text-align: center;
 }
-/*pagina de contato*/
+/*-------pagina de contato--------*/
+/*titulo da main contato*/
 .tituloContato{
     text-align: center;
     padding:15px;
@@ -157,14 +199,18 @@ footer{
     font-family:'Lucida Sans';
     font-size: 30px;  
 }
+/*div contato geral*/
 .contato{
     display: flex;
     justify-content: center;
 }
+/*formulario geral*/
 form{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
     font-size:18px;
 }
+
+/*divs do formulario*/
 form div{
     display: flex;
     flex-direction: column;
@@ -172,12 +218,17 @@ form div{
     width: 500px;
     
 }
+/*inputs do formulario*/
  div input {
     border: 3px #028928 solid ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding:10px;
     border-radius: 12px;
  }
+ input:focus {
+    background-color: #8ce9a5a7;
+}
+ /*opocoes select*/
  div select {
     border: 3px #028928 solid ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -185,16 +236,24 @@ form div{
     border-radius: 12px;
  
  }
+ select:focus {
+    background-color: #8ce9a5a7;
+}
+ /*text area*/
  div textarea { 
     border: 3px #028928 solid ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 8px;
  }
+ textarea:focus {
+    background-color: #8ce9a5a7;
+}
+ /*check box*/
 .orcamento{
     display: inline;
     
 }
-
+/*botom enviar*/
 .butom{
     padding-right: 5px;
     margin-top: 20px;
